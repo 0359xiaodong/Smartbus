@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tom</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_map">ShowMap</string>
+    <string name="set">设置</string>
+    <string name="my">我的</string>
+    <string name="takeph">拍摄</string>
+    <string name="title_activity_list_of_settings">设置</string>
+    <string name="touxiang">头像</string>
+    <string name="title_activity_about_smartbus">AboutSmartbus</string>
+    <string name="hello_world">Tom v1.0</string>
+    <string name="title_activity_up_loading_photo">UpLoadingPhoto</string>
+    <string name="loadingphoto">我的照片</string>
+    <string name="position">所在地点</string>
+    <string name="upload">上传</string>
+    <string name="title_activity_view_real_time_scenery">跟Tom分享你的美景</string>
+    <string name="download">下载</string>
+    <string name="province">省份</string>
+    <string name="city">地点</string>
+    <string name="weather">什么天气都有好心情</string>
+    <string name="back">返回</string>
+    <string name="share">分享</string>
+    <string name="title_activity_poi_search">吃喝玩乐就在附近</string>
+    <string name="title_activity_my_splash">MySplash</string>
+</resources>

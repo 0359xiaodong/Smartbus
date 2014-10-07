@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="青岛" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市内找" >
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88"
+            android:textColor="#000000"
+            android:text="ATM" />
+    </LinearLayout>
+      
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/search"
+            android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+            android:layout_weight="12"
+            android:padding="10dip"
+            android:background="@drawable/button_style"
+            android:onClick="searchButtonProcess"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/map_next_data"
+             android:layout_width="fill_parent"
+            android:layout_weight="12"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:background="@drawable/button_style"
+            android:onClick="goToNextPage"
+            android:text="下一组数据" />
+    </LinearLayout>
+ 
+<com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+    android:clickable="true"     
+/>
+</LinearLayout>

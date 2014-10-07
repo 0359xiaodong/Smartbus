@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpLoadingPhoto" >
+     
+    <RelativeLayout 
+         android:id="@+id/top"
+         android:layout_width="match_parent"
+    	 android:layout_height="50dp"
+    	 android:background="@drawable/bk1"
+        >
+        <TextView 
+            android:id="@+id/location_city"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="10dp"
+        	android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+        	android:textSize="12sp"
+        	android:textStyle="bold"
+            />
+        <RelativeLayout
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/startTake"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/upload" />
+
+            <Button
+                android:id="@+id/uploadphoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_action_done"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+	</RelativeLayout>
+
+		<ImageView 
+	        android:id="@+id/myphoto"
+	        android:layout_below="@+id/top"
+	        android:layout_above="@+id/user_des"
+	        android:layout_marginTop="10dp"
+		    android:contentDescription="@string/loadingphoto"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:scaleType="fitXY"
+	        android:layout_gravity="center_horizontal"
+	        android:adjustViewBounds="true"
+	        android:visibility="visible"
+	       />
+	<EditText
+	    android:id="@+id/user_des"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:ems="10"
+	    android:hint="分享此刻心情。。。" >
+	</EditText>
+
+</RelativeLayout>
