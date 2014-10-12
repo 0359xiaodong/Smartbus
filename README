@@ -1,1 +1,1 @@
-this is a android project
+基于Android平台开发的用于给外出旅游用户提供一个更好的生活体验的软件。它由地图导航，周边查询，天气查询，拍照上传等功能部分构成。也是通过调用webservice提供的接口实现各个功能。服务器端采用Tomcat+Access+MyEclipse的构建方式，搭建webservice并提供接口。
